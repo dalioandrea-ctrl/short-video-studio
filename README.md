@@ -2,146 +2,132 @@
 
 **Estúdio de vídeos curtos com IA de Storytelling profissional**
 
-Um app mobile focado em criação rápida e profissional de vídeos curtos para Instagram Reels e TikTok, com um diferencial poderoso: um módulo de inteligência artificial especializado em criar **séries de histórias** com personagens consistentes, continuidade entre capítulos e materiais prontos para publicação.
+App mobile focado em criação rápida de vídeos para Instagram Reels e TikTok, com um diferencial poderoso: um módulo de inteligência artificial especializado em criar **séries de histórias** com personagens consistentes, continuidade entre capítulos e materiais prontos para publicação.
 
 ---
 
 ## 🎯 Visão do Produto
 
-Criar o melhor estúdio mobile para conteúdos de formato curto, priorizando:
+Transformar qualquer pessoa em um criador profissional de séries para redes sociais.
 
-- **Velocidade** → criar um vídeo bom em menos de 2 minutos
-- **Qualidade** → visual profissional sem precisar de equipamento
-- **Facilidade** → interface intuitiva para qualquer nível de usuário
-- **Storytelling com IA** → criar séries de histórias com continuidade, personagens consistentes e prompts prontos
-
-O grande diferencial do app é transformar qualquer pessoa em um criador de séries profissionais para redes sociais.
+Pilares do produto:
+- **Velocidade** → criar conteúdo de qualidade em poucos minutos
+- **Qualidade** → visual e narrativa profissional
+- **Facilidade** → interface simples e intuitiva
+- **Storytelling com IA** → criar franquias completas com continuidade
 
 ---
 
-## ✨ Principais Funcionalidades
+## ✨ Funcionalidades Principais
 
-### 1. Gravação Inteligente
-- Múltiplas câmeras e tela dividida
-- Velocidade variável (slow motion / time-lapse)
-- Contagem regressiva e timer
-- Filtros e efeitos em tempo real
+### Gravação
+- Câmera frontal e traseira
+- Velocidade variável
+- Filtros em tempo real
+- Contagem regressiva
 - Modo dual camera
 
-### 2. Edição Rápida
-- Timeline simples com gestos
-- Texto animado e legendas automáticas
-- Stickers, efeitos e transições
-- Ajuste de velocidade, cor e áudio
-- Exportação otimizada para Reels e TikTok
+### Edição
+- Timeline intuitiva
+- Texto animado
+- Legendas automáticas
+- Efeitos, stickers e transições
+- Ajuste de velocidade e cor
+- Exportação otimizada (9:16)
 
-### 3. Módulo de IA – Storytelling Profissional (Diferencial)
+### Módulo de IA – Storytelling (Diferencial)
 
-O coração do app. Um fluxo completo e organizado para criar séries de histórias:
+Fluxo completo e profissional:
 
-**Etapa 1 – Criação da História**
-- Título
-- Personagens com ficha completa (aparência, personalidade, roupa, objetivo)
-- Roteiro cinematográfico em 5 cenas (Gancho → Desenvolvimento → Clímax → Final com gancho)
+**Etapa 1 – História**
+- Criação de personagens com ficha completa
+- Roteiro cinematográfico em 5 cenas
+- Gancho + desenvolvimento + clímax + final com gancho
 
 **Etapa 2 – Prompts de Imagem**
 - Prompts detalhados e independentes para cada cena
-- Estilo padrão: 3D Disney Pixar cinematográfico (ou estilo escolhido pelo usuário)
-- Consistência total de personagens em todas as cenas
+- Estilo padrão: 3D Disney Pixar cinematográfico
+- Consistência total de personagens
 
-**Etapa 3 – Animação (Grok / Veo)**
-- Falas dos personagens
-- Expressões faciais
-- Movimentos corporais
+**Etapa 3 – Animação**
+- Falas + expressões + movimentos
 - Movimentos de câmera
-- Sons e atmosfera
-- Prompt completo pronto para animação
+- Prompts prontos para Grok / Veo
 
-**Etapa 4 – Identidade da Franquia** (apenas no 1º capítulo)
+**Etapa 4 – Identidade da Franquia**
 - Nome da franquia
 - Destaque para Instagram
-- Capa cinematográfica do capítulo
-
-**Etapa 5 – Publicação**
-- Legenda envolvente
-- CTA
-- 5 hashtags estratégicas
-
-Tudo com total consistência visual e narrativa entre os capítulos.
-
----
-
-## 🏗️ Estrutura do Projeto (sugerida)
+- Capa cinematográfica
 short-video-studio/
-├── app/                          # Código principal do app
-│   ├── src/
-│   │   ├── components/
-│   │   ├── screens/
+├── app/
+│   ├── lib/ ou src/
+│   │   ├── core/
+│   │   ├── features/
 │   │   │   ├── camera/
 │   │   │   ├── editor/
 │   │   │   ├── templates/
-│   │   │   └── storytelling/     # Módulo de IA de histórias
-│   │   ├── services/
-│   │   │   ├── ai/               # Serviços de geração de história, prompts, etc.
-│   │   │   ├── camera/
-│   │   │   └── export/
-│   │   ├── store/
-│   │   └── utils/
-│   └── assets/
+│   │   │   └── storytelling/      # Módulo principal de IA
+│   │   ├── shared/
+│   │   └── services/
+│   ├── assets/
+│   └── ...
 ├── docs/
+│   ├── product-vision.md
+│   ├── user-flow.md
+│   └── storytelling-flow.md
 ├── design/
 └── README.md
 ---
 
-## 🛠️ Stack Tecnológica Sugerida
+## 🛠️ Stack Recomendada
 
-| Camada                  | Tecnologia recomendada                     |
-|-------------------------|--------------------------------------------|
-| App Mobile              | Flutter ou React Native                    |
-| Processamento de Vídeo  | FFmpeg + MediaPipe                         |
-| IA de Storytelling      | LLM (Grok / GPT) + prompts estruturados    |
-| Geração de Imagem       | Integração com APIs de imagem (Flux, etc.) |
-| Backend                 | Firebase / Supabase                        |
-| Armazenamento           | Firebase Storage / Cloudflare R2           |
+- **App**: Flutter (recomendado) ou React Native
+- **Vídeo**: FFmpeg + bibliotecas nativas de câmera
+- **IA de Storytelling**: Integração com LLM (Grok / OpenAI)
+- **Backend**: Supabase ou Firebase
+- **Armazenamento**: Cloudflare R2 ou Firebase Storage
 
 ---
 
-## 🗺️ Roadmap Inicial
+## 🗺️ Roadmap
 
-### Fase 1 – MVP
-- [ ] Gravação + filtros básicos
+**Fase 1 – Fundação (MVP)**
+- [ ] Estrutura do app
+- [ ] Tela de gravação básica
 - [ ] Editor simples
-- [ ] Exportação otimizada
 - [ ] Módulo de Storytelling (Etapas 1, 2 e 5)
 
-### Fase 2 – Diferenciação
-- [ ] Prompts de animação (Etapa 3)
-- [ ] Identidade de franquia (Etapa 4)
-- [ ] Continuidade automática entre capítulos
-- [ ] Diretor Automático de vídeo
+**Fase 2 – Diferenciação**
+- [ ] Etapa 3 (Animação)
+- [ ] Etapa 4 (Identidade da Franquia)
+- [ ] Continuidade entre capítulos
+- [ ] Melhoria da experiência de edição
 
-### Fase 3 – Crescimento
-- [ ] Marketplace de templates de histórias
-- [ ] Assinatura Pro (mais gerações de IA)
-- [ ] Integração direta com Instagram e TikTok
-- [ ] Analytics de retenção das séries
-
----
-
-## 💰 Modelo de Monetização
-
-- **Freemium**: gravação + edição básica + algumas gerações de história por mês
-- **Assinatura Pro**: gerações ilimitadas de histórias, prompts de animação, identidade de franquia e remoção de marca d’água
-- **Marketplace**: templates de histórias e personagens premium
+**Fase 3 – Crescimento**
+- [ ] Sistema de assinatura
+- [ ] Marketplace de templates
+- [ ] Publicação direta
+- [ ] Analytics
 
 ---
 
-## 📌 Status atual
+## 📌 Status Atual
 
-🚧 **Projeto em fase de planejamento e estruturação**
-
-O diferencial de storytelling com IA já está definido e será o grande ponto forte do produto.
+✅ Visão do produto definida  
+✅ Diferencial de Storytelling mapeado  
+✅ Fluxo completo da IA documentado  
+🚧 Protótipo visual em desenvolvimento  
+🚧 Código ainda não iniciado
 
 ---
 
-Feito com ❤️ para criadores de conteúdo que querem produzir séries profissionais.
+Feito com ❤️ para criadores que querem produzir séries profissionais.
+**Etapa 5 – Publicação**
+- Legenda
+- CTA
+- Hashtags
+
+---
+
+## 🏗️ Estrutura de Pastas Recomendada
+
