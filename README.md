@@ -1,8 +1,8 @@
 # Short Video Studio 🎬
 
-**Estúdio de vídeos curtos para Instagram Reels e TikTok**
+**Estúdio de vídeos curtos com IA de Storytelling profissional**
 
-Um app mobile focado em criação rápida e profissional de vídeos curtos, com gravação inteligente, edição simplificada, templates de tendências e recursos de IA.
+Um app mobile focado em criação rápida e profissional de vídeos curtos para Instagram Reels e TikTok, com um diferencial poderoso: um módulo de inteligência artificial especializado em criar **séries de histórias** com personagens consistentes, continuidade entre capítulos e materiais prontos para publicação.
 
 ---
 
@@ -13,106 +13,126 @@ Criar o melhor estúdio mobile para conteúdos de formato curto, priorizando:
 - **Velocidade** → criar um vídeo bom em menos de 2 minutos
 - **Qualidade** → visual profissional sem precisar de equipamento
 - **Facilidade** → interface intuitiva para qualquer nível de usuário
-- **Tendências** → sempre atualizado com o que está bombando no Reels e TikTok
+- **Storytelling com IA** → criar séries de histórias com continuidade, personagens consistentes e prompts prontos
+
+O grande diferencial do app é transformar qualquer pessoa em um criador de séries profissionais para redes sociais.
 
 ---
 
 ## ✨ Principais Funcionalidades
 
-### Gravação
+### 1. Gravação Inteligente
 - Múltiplas câmeras e tela dividida
 - Velocidade variável (slow motion / time-lapse)
 - Contagem regressiva e timer
 - Filtros e efeitos em tempo real
-- Modo dual camera (frente + traseira)
+- Modo dual camera
 
-### Edição
-- Timeline simples com gestos (cortar, reordenar, velocidade)
-- Transições rápidas
-- Texto animado e legendas automáticas (IA)
-- Stickers, emojis e overlays
-- Ajuste de cor, brilho, contraste e LUTs
-- Reverse, speed ramp e freeze frame
+### 2. Edição Rápida
+- Timeline simples com gestos
+- Texto animado e legendas automáticas
+- Stickers, efeitos e transições
+- Ajuste de velocidade, cor e áudio
+- Exportação otimizada para Reels e TikTok
 
-### Recursos de IA
-- Diretor Automático (sugere melhores cortes e momentos)
-- Legendas automáticas com timing preciso
-- Remoção de fundo / blur de fundo
-- Sugestão de hooks e aberturas
-- Detecção de tendências e aplicação automática de estilo
+### 3. Módulo de IA – Storytelling Profissional (Diferencial)
 
-### Templates & Tendências
-- Templates prontos por nicho (dança, tutorial, storytelling, produto, meme, vlog)
-- Biblioteca de hooks (primeiros 3 segundos)
-- Sincronização automática com áudios em alta
-- Modo "Tendência em 1 toque"
+O coração do app. Um fluxo completo e organizado para criar séries de histórias:
 
-### Exportação & Publicação
-- Presets otimizados para Reels e TikTok (9:16, 1080x1920)
-- Exportação rápida com qualidade alta
-- Remoção de marca d’água (versão Pro)
-- Agendamento e integração direta (futuro)
+**Etapa 1 – Criação da História**
+- Título
+- Personagens com ficha completa (aparência, personalidade, roupa, objetivo)
+- Roteiro cinematográfico em 5 cenas (Gancho → Desenvolvimento → Clímax → Final com gancho)
+
+**Etapa 2 – Prompts de Imagem**
+- Prompts detalhados e independentes para cada cena
+- Estilo padrão: 3D Disney Pixar cinematográfico (ou estilo escolhido pelo usuário)
+- Consistência total de personagens em todas as cenas
+
+**Etapa 3 – Animação (Grok / Veo)**
+- Falas dos personagens
+- Expressões faciais
+- Movimentos corporais
+- Movimentos de câmera
+- Sons e atmosfera
+- Prompt completo pronto para animação
+
+**Etapa 4 – Identidade da Franquia** (apenas no 1º capítulo)
+- Nome da franquia
+- Destaque para Instagram
+- Capa cinematográfica do capítulo
+
+**Etapa 5 – Publicação**
+- Legenda envolvente
+- CTA
+- 5 hashtags estratégicas
+
+Tudo com total consistência visual e narrativa entre os capítulos.
 
 ---
 
 ## 🏗️ Estrutura do Projeto (sugerida)
 short-video-studio/
-├── app/                    # Código principal do app (Flutter / React Native)
+├── app/                          # Código principal do app
 │   ├── src/
-│   │   ├── components/     # Componentes reutilizáveis
-│   │   ├── screens/        # Telas (Gravação, Edição, Templates, etc.)
-│   │   ├── services/       # Serviços (câmera, IA, exportação, API)
-│   │   ├── store/          # Estado global
+│   │   ├── components/
+│   │   ├── screens/
+│   │   │   ├── camera/
+│   │   │   ├── editor/
+│   │   │   ├── templates/
+│   │   │   └── storytelling/     # Módulo de IA de histórias
+│   │   ├── services/
+│   │   │   ├── ai/               # Serviços de geração de história, prompts, etc.
+│   │   │   ├── camera/
+│   │   │   └── export/
+│   │   ├── store/
 │   │   └── utils/
-│   ├── assets/
-│   └── ...
-├── docs/                   # Documentação
-├── design/                 # Wireframes, UI kit, protótipos
-├── backend/                # (opcional) API, autenticação, armazenamento
+│   └── assets/
+├── docs/
+├── design/
 └── README.md
 ---
 
 ## 🛠️ Stack Tecnológica Sugerida
 
-| Camada              | Tecnologia recomendada              |
-|---------------------|-------------------------------------|
-| App Mobile          | Flutter ou React Native             |
-| Processamento Vídeo | FFmpeg, MediaPipe, TensorFlow Lite  |
-| IA (on-device)      | ML Kit / Core ML / TensorFlow Lite  |
-| Backend (futuro)    | Node.js / Firebase / Supabase       |
-| Armazenamento       | Firebase Storage / Cloudflare R2    |
-| Autenticação        | Firebase Auth / Supabase Auth       |
+| Camada                  | Tecnologia recomendada                     |
+|-------------------------|--------------------------------------------|
+| App Mobile              | Flutter ou React Native                    |
+| Processamento de Vídeo  | FFmpeg + MediaPipe                         |
+| IA de Storytelling      | LLM (Grok / GPT) + prompts estruturados    |
+| Geração de Imagem       | Integração com APIs de imagem (Flux, etc.) |
+| Backend                 | Firebase / Supabase                        |
+| Armazenamento           | Firebase Storage / Cloudflare R2           |
 
 ---
 
 ## 🗺️ Roadmap Inicial
 
-### Fase 1 – MVP (2-3 meses)
-- [ ] Gravação básica + filtros
-- [ ] Editor simples (cortar, texto, música)
-- [ ] Templates básicos
-- [ ] Exportação otimizada para Reels/TikTok
-- [ ] Legendas automáticas
+### Fase 1 – MVP
+- [ ] Gravação + filtros básicos
+- [ ] Editor simples
+- [ ] Exportação otimizada
+- [ ] Módulo de Storytelling (Etapas 1, 2 e 5)
 
 ### Fase 2 – Diferenciação
-- [ ] Diretor Automático (IA)
-- [ ] Modo Tendência em 1 toque
-- [ ] Biblioteca de hooks
-- [ ] Colaboração (duetos/assíncrono)
+- [ ] Prompts de animação (Etapa 3)
+- [ ] Identidade de franquia (Etapa 4)
+- [ ] Continuidade automática entre capítulos
+- [ ] Diretor Automático de vídeo
 
 ### Fase 3 – Crescimento
-- [ ] Marketplace de templates
-- [ ] Analytics de retenção
-- [ ] Versão Pro / assinatura
+- [ ] Marketplace de templates de histórias
+- [ ] Assinatura Pro (mais gerações de IA)
 - [ ] Integração direta com Instagram e TikTok
+- [ ] Analytics de retenção das séries
 
 ---
 
-## 💰 Modelo de Monetização (sugestão)
+## 💰 Modelo de Monetização
 
-- **Freemium**: recursos básicos grátis
-- **Assinatura Pro**: efeitos premium, IA avançada, sem marca d’água, armazenamento extra
-- **Marketplace**: templates e efeitos da comunidade (comissão)
+- **Freemium**: gravação + edição básica + algumas gerações de história por mês
+- **Assinatura Pro**: gerações ilimitadas de histórias, prompts de animação, identidade de franquia e remoção de marca d’água
+- **Marketplace**: templates de histórias e personagens premium
 
 ---
 
@@ -120,12 +140,8 @@ short-video-studio/
 
 🚧 **Projeto em fase de planejamento e estruturação**
 
-Próximos passos:
-1. Definir stack final (Flutter vs React Native)
-2. Criar protótipo de alta fidelidade (Figma)
-3. Configurar ambiente de desenvolvimento
-4. Começar o MVP
+O diferencial de storytelling com IA já está definido e será o grande ponto forte do produto.
 
 ---
 
-Feito com ❤️ para criadores de conteúdo.
+Feito com ❤️ para criadores de conteúdo que querem produzir séries profissionais.
