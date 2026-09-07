@@ -1,0 +1,11 @@
+{
+  "name": "Shopee Video AI",
+  "short_name": "Shopee AI",
+  "description": "Crie criativos verticais para produtos de afiliados.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#08090c",
+  "theme_color": "#ff4fa3",
+  "lang": "pt-BR",
+  "icons": []
+}
