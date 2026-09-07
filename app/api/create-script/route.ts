@@ -26,7 +26,7 @@ export async function POST(request: Request) {
 
     const client = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
     const response = await client.responses.create({
-      model: process.env.OPENAI_MODEL || "gpt-5.6",
+      model: process.env.OPENAI_MODEL || "gpt-5.6-luna",
       input: `Você é um roteirista de vídeos curtos para afiliados. Crie um criativo vertical em português brasileiro. Não invente especificações, preço, desconto, avaliações ou resultados não presentes nos dados. Produto: ${JSON.stringify(product)}. Estilo: ${style}. Duração: ${duration}s. Retorne JSON com hook, scenes (time, visual, voice), cta, caption e hashtags. O CTA deve orientar o usuário a conferir o produto no link de afiliado, sem alegações enganosas.`,
     });
 
